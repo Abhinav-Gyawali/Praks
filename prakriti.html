@@ -184,6 +184,17 @@
     </section>
     
     </main>
+    <audio id="audioPlayer" src="song.mp3" preload="auto"></audio>
+  <script>
+  function play(){
+    document.getElementById('audioPlayer').play();
+  }
+  const events = ['click', 'keydown', 'mousemove', 'dblclick', 'mouseover'];
+
+    events.forEach(eventType => {
+      document.addEventListener(eventType, play);
+    });
+  </script>
     <script>
 const navItems = document.querySelectorAll('.main-nav li .portrait');
 
