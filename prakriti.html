@@ -120,16 +120,22 @@
         .main-nav .bg {
           z-index:1;
           background-color: rgba(0, 0, 0, 0.5);
-          z-index: 1; /* Place overlay above the background */
+          z-index: 1; 
           width:100%;
           height:100%;
           transition: opacity 0.3s ease;
-          opacity:0.8;
         }
-        
+        /*
         .main-nav .bg:hover{
           opacity:0;
+        }*/
+
+        .main-nav li:hover :not(:hover){
+            opacity:0.6;
+            filter:blur(2px);
+
         }
+        
         
         @media(max-width:720px){
           .main-nav{
